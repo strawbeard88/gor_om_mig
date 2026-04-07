@@ -28,3 +28,45 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// --- Knappar ---
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+
+  &--primary {
+    background-color: $color-accent;
+    color: #fff;
+    border: 2px solid $color-accent;
+
+    &:hover {
+      background-color: #c24e03;
+      border-color: #c24e03;
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: $color-text;
+    border: 2px solid $color-border;
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+    }
+  }
+}
