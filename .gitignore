@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Source maps (genereras vid kompilering)
+dist/css/*.map
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
