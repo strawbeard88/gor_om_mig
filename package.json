@@ -8,6 +8,7 @@
     "watch": "sass src/scss/main.scss dist/css/main.css --watch --style expanded"
   },
   "dependencies": {
+    "sass": "^1.99.0",
     "scss": "^0.2.4"
   }
 }
