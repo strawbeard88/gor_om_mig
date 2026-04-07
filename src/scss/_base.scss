@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// --- Grundläggande body ---
+body {
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
