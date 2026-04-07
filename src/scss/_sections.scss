@@ -144,3 +144,42 @@
     }
   }
 }
+
+// ----- VARUMÄRKEN -----
+.brands {
+  padding: 4rem 0;
+  background-color: $color-surface;
+  border-top: 1px solid $color-border;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    span {
+      padding: 0.6rem 1.25rem;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: $color-muted;
+      transition:
+        color 0.2s,
+        border-color 0.2s;
+
+      &:hover {
+        color: $color-text;
+        border-color: $color-accent;
+      }
+    }
+  }
+}
