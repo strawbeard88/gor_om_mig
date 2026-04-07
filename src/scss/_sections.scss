@@ -211,3 +211,65 @@
     gap: 1rem;
   }
 }
+
+// ----- FOOTER -----
+footer {
+  background-color: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: 3rem 0 1.5rem;
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .footer-logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  .footer-tagline {
+    color: $color-muted;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    display: block;
+    font-size: 0.875rem;
+    color: $color-muted;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid $color-border;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+  }
+}
