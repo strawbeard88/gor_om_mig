@@ -121,3 +121,26 @@
     line-height: 1.8;
     margin-bottom: 1rem;
   }
+
+  // Dekorativ ruta på höger sida
+  .about-visual {
+    background-color: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+
+    .big-number {
+      font-size: 5rem;
+      font-weight: 900;
+      color: $color-accent;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $color-muted;
+      margin-top: 0.5rem;
+    }
+  }
+}
